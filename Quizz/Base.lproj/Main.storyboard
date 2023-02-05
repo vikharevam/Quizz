@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WwW-uq-djq">
+                                <rect key="frame" x="40" y="74" width="295" height="4"/>
+                                <color key="tintColor" red="0.63137254901960782" green="0.45098039215686275" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопросы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-gh-il4">
+                                <rect key="frame" x="20" y="98" width="335" height="488"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-LB-cop">
+                                <rect key="frame" x="62.666666666666657" y="674" width="249.99999999999997" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5Hs-49-n3O"/>
+                                    <constraint firstAttribute="height" constant="60" id="Q5s-2y-jKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ложь" backgroundImage="Rectangle">
+                                    <color key="titleColor" red="0.26892952990000002" green="0.30947704910000001" blue="0.40072732020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yn-xz-Hi0">
+                                <rect key="frame" x="62.666666666666657" y="606" width="249.99999999999997" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="POX-S9-LGb"/>
+                                    <constraint firstAttribute="width" constant="250" id="jvJ-sf-Go8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Правда" backgroundImage="Rectangle">
+                                    <color key="titleColor" red="0.26892952990000002" green="0.30947704910000001" blue="0.40072732020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ka2-gh-il4" firstAttribute="top" relation="lessThanOrEqual" secondItem="WwW-uq-djq" secondAttribute="bottom" constant="20" id="0IV-Af-DFS"/>
+                            <constraint firstItem="Eid-LB-cop" firstAttribute="top" secondItem="6Yn-xz-Hi0" secondAttribute="bottom" constant="8" symbolic="YES" id="ANd-Dj-8tw"/>
+                            <constraint firstItem="Ka2-gh-il4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Blu-lY-LbI"/>
+                            <constraint firstItem="WwW-uq-djq" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-40" id="C56-gK-pBv"/>
+                            <constraint firstItem="WwW-uq-djq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="KLT-e4-y6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WwW-uq-djq" secondAttribute="leading" constant="-40" id="cV4-ur-svv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Eid-LB-cop" secondAttribute="bottom" constant="44" id="fOF-hc-rbe"/>
+                            <constraint firstItem="6Yn-xz-Hi0" firstAttribute="width" secondItem="Eid-LB-cop" secondAttribute="width" id="leM-hC-XsY"/>
+                            <constraint firstAttribute="trailing" secondItem="Ka2-gh-il4" secondAttribute="trailing" constant="20" id="o5n-kF-G0s"/>
+                            <constraint firstItem="6Yn-xz-Hi0" firstAttribute="top" secondItem="Ka2-gh-il4" secondAttribute="bottom" constant="20" id="qRh-ki-MPd"/>
+                            <constraint firstItem="6Yn-xz-Hi0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xlW-9h-KlO"/>
+                            <constraint firstItem="WwW-uq-djq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y6e-Ub-H0t"/>
+                            <constraint firstItem="Eid-LB-cop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8n-Gb-zzI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="-2.2167487684729066"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="322" height="68"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
