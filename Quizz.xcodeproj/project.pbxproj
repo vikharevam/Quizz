@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9571655329914FDF0024BDF4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9571655229914FDF0024BDF4 /* Question.swift */; };
+		957165552991605A0024BDF4 /* NoNoNo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 957165542991605A0024BDF4 /* NoNoNo.mov */; };
 		9592B980298FA8A300A6E84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B97F298FA8A300A6E84A /* AppDelegate.swift */; };
 		9592B982298FA8A300A6E84A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B981298FA8A300A6E84A /* SceneDelegate.swift */; };
 		9592B984298FA8A300A6E84A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592B983298FA8A300A6E84A /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9571655229914FDF0024BDF4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		957165542991605A0024BDF4 /* NoNoNo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = NoNoNo.mov; sourceTree = "<group>"; };
 		9592B97C298FA8A300A6E84A /* Quizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9592B97F298FA8A300A6E84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9592B981298FA8A300A6E84A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				9592B97F298FA8A300A6E84A /* AppDelegate.swift */,
 				9592B981298FA8A300A6E84A /* SceneDelegate.swift */,
 				9592B983298FA8A300A6E84A /* ViewController.swift */,
+				9571655229914FDF0024BDF4 /* Question.swift */,
 				9592B985298FA8A300A6E84A /* Main.storyboard */,
 				9592B988298FA8A500A6E84A /* Assets.xcassets */,
 				9592B98A298FA8A500A6E84A /* LaunchScreen.storyboard */,
 				9592B98D298FA8A500A6E84A /* Info.plist */,
+				957165542991605A0024BDF4 /* NoNoNo.mov */,
 			);
 			path = Quizz;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9592B98C298FA8A500A6E84A /* LaunchScreen.storyboard in Resources */,
+				957165552991605A0024BDF4 /* NoNoNo.mov in Resources */,
 				9592B989298FA8A500A6E84A /* Assets.xcassets in Resources */,
 				9592B987298FA8A300A6E84A /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9592B984298FA8A300A6E84A /* ViewController.swift in Sources */,
+				9571655329914FDF0024BDF4 /* Question.swift in Sources */,
 				9592B980298FA8A300A6E84A /* AppDelegate.swift in Sources */,
 				9592B982298FA8A300A6E84A /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +301,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -324,7 +333,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

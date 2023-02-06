@@ -21,7 +21,7 @@
                                 <rect key="frame" x="40" y="77" width="295" height="4"/>
                                 <color key="tintColor" red="0.63137254901960782" green="0.45098039215686275" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопросы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-gh-il4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопросы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-gh-il4">
                                 <rect key="frame" x="20" y="101" width="335" height="485"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -37,6 +37,9 @@
                                 <state key="normal" title="Ложь" backgroundImage="Rectangle">
                                     <color key="titleColor" red="0.26892952990000002" green="0.30947704910000001" blue="0.40072732020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="amswerPassedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsT-ml-Ix6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yn-xz-Hi0">
                                 <rect key="frame" x="26.666666666666657" y="606" width="322" height="60"/>
