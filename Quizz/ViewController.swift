@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionView: UILabel!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
+
+    let colorButtonNormal = #imageLiteral(resourceName: "Rectangle")
+    let colorButtonRight = #imageLiteral(resourceName: "Rectangle_green")
+    let colorButtonWrong = #imageLiteral(resourceName: "Rectangle_red")
+    
+
     
     
     var questionNumber = 0
@@ -31,8 +37,10 @@ class ViewController: UIViewController {
         let actualAnswer = quizzQuestoins [questionNumber].answer
         
         if userAnswer == actualAnswer {
+            playSound(nameSound: soundRight)
             print("Right!")
         } else {
+            playSound(nameSound: soundWrong)
             print("Wrong!")
         }
     
