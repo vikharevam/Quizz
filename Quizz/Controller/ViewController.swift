@@ -63,27 +63,19 @@ class ViewController: UIViewController {
             print("Wrong!")
         }
         
-        if questionNumber + 1 < quizzQuestoins.count{
-            questionNumber += 1
-          
-        } else {
-            questionNumber = 0
-            
-        }
+        quizzBrain.nextQustion()
        
-   
-        
+
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateQuestionUI), userInfo: nil, repeats: false)
     }
     
    @objc func updateQuestionUI() {
        questionView.text = quizzBrain.getQuestionText()
-        
-        scoreBar.text = "Счёт: \(scorePoint)"
-        
-        trueButton.backgroundColor = UIColor.clear
-        falseButton.backgroundColor = UIColor.clear
-    
+       scoreBar.text = "Счёт: \(scorePoint)"
+       trueButton.backgroundColor = UIColor.clear
+       trueButton.layer.cornerRadius = 20
+       falseButton.layer.cornerRadius = 20
+       falseButton.backgroundColor = UIColor.clear
        progressBar.progress =  quizzBrain.getProgress()
     }
 }

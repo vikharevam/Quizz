@@ -12,7 +12,7 @@ struct QuizzBrain {
     let quizzQuestoins = [
         Question(q: "Строительство Эйфелевой башни было завершено 31 марта 1887 года.", a: "Ложь"),
         Question(q: "Молнию можно увидеть раньше, чем услышать, потому что свет распространяется быстрее звука.", a: "Правда"),
-
+        
         Question(q: "Ватикан — это страна.", a: "Правда"),
         Question(q: "Мельбурн — столица Австралии.", a: "Ложь"),
         Question(q: "Пенициллин был открыт во Вьетнаме для лечения малярии.", a: "Ложь"),
@@ -30,20 +30,20 @@ struct QuizzBrain {
         Question(q: "Шелк паука когда-то использовался для изготовления гитарных струн.", a: "Ложь"),
         Question(q: "Кокос — это орех.", a: "Ложь")
         /*
-        https://ahaslides.com/ru/blog/fun-true-or-false-quiz-questions-answers истояник вопросов
-        */
+         https://ahaslides.com/ru/blog/fun-true-or-false-quiz-questions-answers истояник вопросов
+         */
     ]
     
     var questionNumber = 0  //номер вопроса
     
     
     func getQuestionText() -> String {
-       return quizzQuestoins[questionNumber].text
+        return quizzQuestoins[questionNumber].text
     }
-   
+    
     func getProgress() -> Float {
-
-    return Float(questionNumber + 1)/Float(quizzQuestoins.count)
+        
+        return Float(questionNumber + 1)/Float(quizzQuestoins.count)
         
     }
     
@@ -52,6 +52,16 @@ struct QuizzBrain {
             return true
         } else {
             return false
+        }
+    }
+    
+    mutating func nextQustion() {
+        if questionNumber + 1 < quizzQuestoins.count{
+            questionNumber += 1
+            
+        } else {
+            questionNumber = 0
+            
         }
     }
     

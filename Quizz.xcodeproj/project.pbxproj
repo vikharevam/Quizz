@@ -16,7 +16,7 @@
 		9592B987298FA8A300A6E84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9592B985298FA8A300A6E84A /* Main.storyboard */; };
 		9592B989298FA8A500A6E84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9592B988298FA8A500A6E84A /* Assets.xcassets */; };
 		9592B98C298FA8A500A6E84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9592B98A298FA8A500A6E84A /* LaunchScreen.storyboard */; };
-		95BD5E7B2992701900ACE43D /* MultimediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD5E7A2992701900ACE43D /* MultimediaControl.swift */; };
+		95BD5E7B2992701900ACE43D /* MediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD5E7A2992701900ACE43D /* MediaControl.swift */; };
 		95BD5E972992736300ACE43D /* NoNoNo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95BD5E962992736300ACE43D /* NoNoNo.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		9592B988298FA8A500A6E84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9592B98B298FA8A500A6E84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9592B98D298FA8A500A6E84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95BD5E7A2992701900ACE43D /* MultimediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimediaControl.swift; sourceTree = "<group>"; };
+		95BD5E7A2992701900ACE43D /* MediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaControl.swift; sourceTree = "<group>"; };
 		95BD5E962992736300ACE43D /* NoNoNo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NoNoNo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				9592B983298FA8A300A6E84A /* ViewController.swift */,
-				95BD5E7A2992701900ACE43D /* MultimediaControl.swift */,
+				95BD5E7A2992701900ACE43D /* MediaControl.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 				950C267A2993B14A00E58181 /* QuizzBrain.swift in Sources */,
 				9592B980298FA8A300A6E84A /* AppDelegate.swift in Sources */,
 				9592B982298FA8A300A6E84A /* SceneDelegate.swift in Sources */,
-				95BD5E7B2992701900ACE43D /* MultimediaControl.swift in Sources */,
+				95BD5E7B2992701900ACE43D /* MediaControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
