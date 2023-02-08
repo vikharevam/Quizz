@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     */
     
     
-    var scorePoint = 0 //счёт
+  
     
     var quizzBrain = QuizzBrain()
    
@@ -52,15 +52,12 @@ class ViewController: UIViewController {
         if userGotItRight  {
             playSound(nameSound: soundRight)
             sender.backgroundColor = UIColor.green
-            scorePoint += 1
-  
-            print("Right!")
+           
             
         } else {
             playSound(nameSound: soundWrong)
             sender.backgroundColor = UIColor.red
             
-            print("Wrong!")
         }
         
         quizzBrain.nextQustion()
@@ -71,7 +68,7 @@ class ViewController: UIViewController {
     
    @objc func updateQuestionUI() {
        questionView.text = quizzBrain.getQuestionText()
-       scoreBar.text = "Счёт: \(scorePoint)"
+       scoreBar.text = "Счёт: \(quizzBrain.getScore())"
        trueButton.backgroundColor = UIColor.clear
        trueButton.layer.cornerRadius = 20
        falseButton.layer.cornerRadius = 20

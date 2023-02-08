@@ -35,7 +35,7 @@ struct QuizzBrain {
     ]
     
     var questionNumber = 0  //номер вопроса
-    
+    var scorePoint = 0 //счёт
     
     func getQuestionText() -> String {
         return quizzQuestoins[questionNumber].text
@@ -47,12 +47,17 @@ struct QuizzBrain {
         
     }
     
-    func checkAnswer(_ userAnswer: String) -> Bool {
+    mutating func checkAnswer(_ userAnswer: String) -> Bool {
         if userAnswer == quizzQuestoins[questionNumber].answer {
+            scorePoint += 1
             return true
         } else {
             return false
         }
+    }
+    
+    func getScore() -> Int {
+        return scorePoint
     }
     
     mutating func nextQustion() {
@@ -61,11 +66,16 @@ struct QuizzBrain {
             
         } else {
             questionNumber = 0
+            scorePoint = 0
             
         }
     }
     
+    
+    
 }
+
+
 
 
 
