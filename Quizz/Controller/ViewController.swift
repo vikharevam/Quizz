@@ -27,8 +27,10 @@ class ViewController: UIViewController {
     
     
     var scorePoint = 0 //счёт
-    var questionNumber = 0  //номер вопроса
+    
+    var quizzBrain = QuizzBrain()
    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +46,10 @@ class ViewController: UIViewController {
       
         
         
-        let userAnswer = sender.currentTitle //выбор пользователя
-        let actualAnswer = quizzQuestoins [questionNumber].answer //текущий вопрос получае значение в структуре вопросов
+        let userAnswer = sender.currentTitle! //выбор пользователя
+        let userGotItRight = quizzBrain.checkAnswer(userAnswer)
         
-        if userAnswer == actualAnswer {
+        if userGotItRight  {
             playSound(nameSound: soundRight)
             sender.backgroundColor = UIColor.green
             scorePoint += 1
@@ -75,15 +77,14 @@ class ViewController: UIViewController {
     }
     
    @objc func updateQuestionUI() {
-        questionView.text = quizzQuestoins[questionNumber].text
+       questionView.text = quizzBrain.getQuestionText()
         
         scoreBar.text = "Счёт: \(scorePoint)"
         
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
     
-       progressBar.progress =  Float(questionNumber + 1)/Float(quizzQuestoins.count)
-        
+       progressBar.progress =  quizzBrain.getProgress()
     }
 }
 
