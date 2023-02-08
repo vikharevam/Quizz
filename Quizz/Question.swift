@@ -39,5 +39,9 @@ let quizzQuestoins = [
     Question(q: "Кока-кола есть во всех странах мира.", a: "Ложь"),
     Question(q: "Шелк паука когда-то использовался для изготовления гитарных струн.", a: "Ложь"),
     Question(q: "Кокос — это орех.", a: "Ложь")
-    //https://ahaslides.com/ru/blog/fun-true-or-false-quiz-questions-answers истояник вопросов
+    /*
+    https://ahaslides.com/ru/blog/fun-true-or-false-quiz-questions-answers истояник вопросов
+    */
 ]
+
+

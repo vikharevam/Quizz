@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Счет:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TP-li-ZIM">
-                                <rect key="frame" x="166" y="757" width="43" height="21"/>
+                                <rect key="frame" x="166" y="95" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,8 +72,10 @@
                             <constraint firstItem="WwW-uq-djq" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-40" id="C56-gK-pBv"/>
                             <constraint firstItem="WwW-uq-djq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="KLT-e4-y6Z"/>
                             <constraint firstItem="4TP-li-ZIM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LLg-qw-lbR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4TP-li-ZIM" secondAttribute="bottom" id="Xtx-O6-MiJ"/>
+                            <constraint firstItem="6Yn-xz-Hi0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="NAy-Ra-yMN"/>
+                            <constraint firstItem="4TP-li-ZIM" firstAttribute="top" secondItem="WwW-uq-djq" secondAttribute="bottom" constant="14" id="XQo-TO-qb1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WwW-uq-djq" secondAttribute="leading" constant="-40" id="cV4-ur-svv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Yn-xz-Hi0" secondAttribute="trailing" constant="25" id="fEw-VR-YKP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Eid-LB-cop" secondAttribute="bottom" constant="44" id="fOF-hc-rbe"/>
                             <constraint firstItem="6Yn-xz-Hi0" firstAttribute="width" secondItem="Eid-LB-cop" secondAttribute="width" id="leM-hC-XsY"/>
                             <constraint firstAttribute="trailing" secondItem="Ka2-gh-il4" secondAttribute="trailing" constant="20" id="o5n-kF-G0s"/>
@@ -87,6 +89,7 @@
                         <outlet property="falseButton" destination="Eid-LB-cop" id="M4i-WX-Mlq"/>
                         <outlet property="progressBar" destination="WwW-uq-djq" id="lnn-hV-gkW"/>
                         <outlet property="questionView" destination="Ka2-gh-il4" id="yqj-OX-Och"/>
+                        <outlet property="scoreBar" destination="4TP-li-ZIM" id="ysZ-wH-o8g"/>
                         <outlet property="trueButton" destination="6Yn-xz-Hi0" id="qtD-Oo-yyj"/>
                     </connections>
                 </viewController>
